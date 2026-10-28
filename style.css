@@ -11,8 +11,16 @@ header {
 }
 
 /* Step 5: nav - background color */
+/* HW2: nav dùng inline-block và rộng khoảng 80% */
 nav {
   background-color: #dbe7f5;
+  display: inline-block;
+  width: 80%;
+}
+
+/* HW2: chỉ ảnh nằm trong nav rộng khoảng 10% */
+nav img {
+  width: 10%;
 }
 
 /* Step 6: main - background color và font size */
@@ -27,11 +35,13 @@ footer {
   color: #ffffff;
 }
 
-/* Step 8: li - display và width */
+/* Step 8: li - display và width (HW2: đã comment out) */
+/*
 li {
   display: inline-block;
   width: 150px;
 }
+*/
 
 /* Step 9: h1 - text-align, font-family, color */
 h1 {
@@ -43,4 +53,25 @@ h1 {
 /* Step 10: p - line-height */
 p {
   line-height: 1.6;
+}
+
+/* HW2: class grid - lưới 2 cột, mỗi cột khoảng 40% */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly; /* thử: center, space-around, space-between */
+  align-items: center;           /* thử: start, end, stretch */
+  row-gap: 20px;                 /* thử: 10px, 30px, 40px */
+}
+
+/* HW2: chỉ ảnh nằm trong .grid rộng 100% */
+.grid img {
+  width: 100%;
+}
+
+/* HW2: class flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;               /* thử: nowrap, wrap */
+  justify-content: space-around; /* thử: space-between, space-evenly, center */
 }
